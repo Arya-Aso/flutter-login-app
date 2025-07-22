@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
 
     try {
       final response = await http.post(
-        Uri.parse('http://192.168.1.9/login.php'), // Use your PC IP if on real device
+        Uri.parse('http://10.0.0.1/login.php'), // Use your PC IP if on real device
         body: {
           'username': username,
           'password': password,
